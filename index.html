@@ -172,7 +172,8 @@
       
       const isPrimary = document.querySelector('input[name="isPrimary"]:checked').value === 'yes';
       const standardPrice = Number(document.getElementById('standardPrice').value);
-      const isTaxExempt = isPrimary && standardPrice > 0 && standardPrice <= 1200000000;
+      const isTaxExempt = isPrimary && holdYears >= 2 && standardPrice > 0 && standardPrice <= 1200000000;
+
 
 
       
